@@ -1,0 +1,672 @@
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Bebas_Neue\,Kavoon\,Moul\,Poppins/Poppins/Poppins-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Moul';
+    src: url(../fonts/Bebas_Neue\,Kavoon\,Moul\,Poppins/Moul/Moul-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Kavoon;
+    src: url(../fonts/Bebas_Neue\,Kavoon\,Moul\,Poppins/Kavoon/Kavoon-Regular.ttf);
+}
+
+@font-face {
+    font-family: Bebas;
+    src: url(../fonts/Bebas_Neue\,Kavoon\,Moul\,Poppins/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+header{
+    background-color: black;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+nav{
+    display: flex;
+    margin-left: 250px;
+}
+
+ul{
+    font-weight: 600;
+    color: white;
+    align-items: center;
+    margin-left: 100px;
+    display: flex;
+    gap: 100px;
+    list-style: none;
+}
+
+.btn-nav{
+    display: inline-block;
+    transition: 0.3s ease;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-nav:hover {
+    transform: scale(1.08);
+    color: #dfdddd;
+}
+
+.logo-header{
+    margin-left: 50px;
+    width: 200px;
+    height: auto;
+}
+
+#header-insta:hover{
+    background: #dfdddd;
+    border: #dfdddd;
+    transform: scale(1.08);
+}
+
+#header-insta{
+    padding: 8px 8px;
+    margin-left: 55px;
+    margin-top: 30px;
+    width: 35px;
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 25px;
+    background-color: white;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding-left: 10%;
+    padding: 110px 110px;
+    
+
+}
+
+.hero-img img{
+    width: 1100px;
+    display: block;
+}
+
+.hero-text{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+}
+
+.hero-text h1{
+    font-size: 50px;
+}
+
+.hero-text h2{
+    font-size: 25px;
+}
+
+#btn-agendar{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: solid 1px #A10E0E;
+    padding: 20px 12px;
+    background-color: #A10E0E;
+    border-radius: 12px;
+    width: fit-content;
+    font-weight:bold;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+#btn-agendar:hover{
+    color: #dfdddd;
+    transform: scale(1.08);
+}
+
+.hero{
+    background-color: black;
+    
+}
+
+.sobre{
+    padding: 35px 35px;
+}
+
+#title-sobre{
+    font-size: 80px;
+    font-family: Moul;
+}
+
+.frase-sobre{
+    border-left: 3px solid #A10E0E;
+    margin-bottom: 30px;
+    padding-left: 15px;
+}
+
+.bloco-sup{
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px; 
+}
+
+.bloco-inf{
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    margin-top: 95px;
+}
+
+.sobre ul{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sobre-img img{
+    width: 500px;
+    height: auto;
+}
+
+ul img{
+    color: #A10E0E;
+}
+
+.servicos{
+    background-color: black;
+    padding: 125px 0px;
+}
+
+.servicos-text{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.servicos-text h1{
+    color: white;
+    font-family: Moul;
+    font-size: 60px;
+}
+
+#letra{
+    font-size: 65px;
+    font-family: Kavoon;
+}
+
+
+.servicos-text img{
+    width: 400px;
+}
+
+.frase-servicos p{
+    color: white;
+    display: flex;
+    padding: 150px 0;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.card-servicos{
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+}
+
+.card-1{
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow: hidden;
+    padding: 15px 0px;
+}
+
+.card-1 ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 30px;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.card-1 li{
+    color: rgb(0, 0, 0);
+    text-align: left;
+    width: 100%;
+    border-bottom: 1px solid #333;
+    padding-bottom: 15px;
+}
+
+.card-topo1{
+    background-color: #A10E0E;
+    margin-top: -20px;
+}
+
+.card-topo1 h3{
+    font-family: Moul;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.card-topo1 p{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-1{
+    padding-left: 15px;
+}
+
+.check-1 img{
+    width: 15px;
+    margin-right: 10px;
+}
+
+.agendar-corte{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-family: Moul;
+    border: 1px solid #A10E0E;
+    background-color: #A10E0E;
+    border-radius: 15px;
+    padding: 7px 25px;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 65px;
+    transition: 0.3s;
+}
+
+.agendar-corte:hover{
+    transform: scale(1.08);
+}
+
+.rs-1{
+    font-family: Bebas;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.valor-1{
+    font-family: Bebas;
+    font-size: 80px;
+
+}
+
+.centavos-1{
+    font-family: Bebas;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.preco-1{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-2{
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow: hidden;
+    padding: 15px 0px;
+}
+
+.card-2 ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 30px;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.card-2 li{
+    color: rgb(0, 0, 0);
+    text-align: left;
+    width: 100%;
+    border-bottom: 1px solid #333;
+    padding-bottom: 15px;
+}
+
+.card-topo2{
+    background-color: #A10E0E;
+    margin-top: -20px;
+}
+
+.card-topo2 h3{
+    font-family: Moul;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.card-topo2 p{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-2{
+    padding-left: 15px;
+}
+
+.check-2 img{
+    width: 15px;
+    margin-right: 10px;
+}
+
+.agendar-barba{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-family: Moul;
+    border: 1px solid #A10E0E;
+    background-color: #A10E0E;
+    border-radius: 15px;
+    padding: 7px 25px;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 35px;
+    transition: 0.3s;
+}
+
+.agendar-barba:hover{
+    transform: scale(1.08);
+}
+
+.rs-2{
+    font-family: Bebas;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.valor-2{
+    font-family: Bebas;
+    font-size: 80px;
+
+}
+
+.centavos-2{
+    font-family: Bebas;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.preco-2{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-3{
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow: hidden;
+    padding: 15px 0px;
+}
+
+.card-3 ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 10px;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.card-3 li{
+    color: rgb(0, 0, 0);
+    text-align: left;
+    width: 100%;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.card-topo3{
+    background-color: #A10E0E;
+    margin-top: -20px;
+}
+
+.card-topo3 h3{
+    font-family: Moul;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.card-topo3 p{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-3{
+    padding-left: 15px;
+}
+
+.check-3 img{
+    width: 15px;
+    margin-right: 10px;
+}
+
+.agendar-cortebarba{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-family: Moul;
+    border: 1px solid #A10E0E;
+    background-color: #A10E0E;
+    border-radius: 15px;
+    padding: 7px 25px;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: 25px;
+    transition: 0.3s;
+}
+
+.agendar-cortebarba:hover{
+    transform: scale(1.08);
+}
+
+.rs-3{
+    font-family: Bebas;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.valor-3{
+    font-family: Bebas;
+    font-size: 80px;
+
+}
+
+.centavos-3{
+    font-family: Bebas;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.preco-3{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: -35px;
+    margin-bottom: -60px;
+}
+
+.titulo-contato{
+    font-family: Moul;
+    font-size: 17px;
+}
+
+.frase-contato{
+    font-size: 17px;
+}
+
+.conteudo-contato{
+    flex-direction: column;
+    padding: 150px 100px;
+}
+
+.conteudo-page{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conteudo-page iframe{
+    display: flex;
+    padding-top: 200px;
+}
+
+.endereco-contato{
+    display: flex;
+    gap: 15px;
+    
+}
+
+.endereco-contato p{
+    font-size: 17px;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+}
+
+#icon-map{
+    width: 40px;
+}
+
+.tel-contato{
+    display: flex;
+    gap: 15px;   
+}
+
+.tel-contato p{
+    font-size: 17px;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+    padding-right: 330px;
+}
+
+#icon-wpp {
+    width: 35px;
+}
+
+.insta-contato{
+    display: flex;
+    gap: 15px;   
+}
+
+.insta-contato p{
+    font-size: 17px;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+}
+
+#icon-insta {
+    width: 40px;
+}
+
+.logo-frase{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo-frase h3 {
+    color: #ffffff;
+    font-size: 25px;
+}
+
+#logo-footer{
+    width: 300px;
+}
+
+.hr-funcionamento{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Moul;
+    margin-top: 80px;
+    color: #A10E0E;
+}
+.footer-inferior {
+    display: flex;
+    justify-content: space-evenly;
+    color: #ffffff;
+}
+
+.juncao {
+    text-align: left;
+}
+
+.footer-content{
+    background-color: black;
+    padding: 45px 0;
+}
+
+.dias {
+    display: flex;
+    font-weight: bold;
+    gap: 90px;
+}
+
+.hrs{
+    display: flex;
+    gap: 90px;
+}
+
+.info-footer{
+    margin-left: 20px;
+}
+
+.footer-bottom{
+    background-color: #404040;
+    color: white;
+    padding: 10px;   
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: center;
+}
+
+.mapBox{
+    width: 600px;
+    height: 500px;
+    background-color: #ffffff;
+}
+
+.mapBox iframe{
+    width: 100%;
+    height: 100%;
+}
