@@ -13,12 +13,12 @@ html{
 
 @font-face {
     font-family: Kavoon;
-    src: url(../fonts/Bebas_Neue\,Kavoon\,Moul\,Poppins/Kavoon/Kavoon-Regular.ttf);
+    src: url(../fonts/Bebas_Neue\,Kavoon\,Moul\,Poppins/Kavoon/Kavoon-Regular.ttf) format('truetype');
 }
 
 @font-face {
     font-family: Bebas;
-    src: url(../fonts/Bebas_Neue\,Kavoon\,Moul\,Poppins/Bebas_Neue/BebasNeue-Regular.ttf);
+    src: url(../fonts/Bebas_Neue\,Kavoon\,Moul\,Poppins/Bebas_Neue/BebasNeue-Regular.ttf) format('truetype');
 }
 
 body{
@@ -38,9 +38,9 @@ nav{
     margin-left: 250px;
 }
 
-ul{
+nav ul{
     font-weight: 600;
-    color: white;
+    color: rgb(255, 255, 255);
     align-items: center;
     margin-left: 100px;
     display: flex;
@@ -165,11 +165,17 @@ ul{
     margin-top: 95px;
 }
 
-.sobre ul{
-    font-size: 25px;
+.bloco-inf ul{
+    list-style: none;
+}
+
+.bloco-inf li{
+    font-size: 22px;
+    font-weight: 600;
     color: rgb(0, 0, 0);
     flex-direction: column;
     align-items: flex-start;
+    padding: 25px;
 }
 
 .sobre-img img{
@@ -177,7 +183,7 @@ ul{
     height: auto;
 }
 
-ul img{
+.bloco-inf ul img{
     color: #A10E0E;
 }
 
@@ -233,24 +239,6 @@ ul img{
     padding: 15px 0px;
 }
 
-.card-1 ul{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    gap: 30px;
-    padding-left: 0;
-    margin-left: 0;
-}
-
-.card-1 li{
-    color: rgb(0, 0, 0);
-    text-align: left;
-    width: 100%;
-    border-bottom: 1px solid #333;
-    padding-bottom: 15px;
-}
-
 .card-topo1{
     background-color: #A10E0E;
     margin-top: -20px;
@@ -267,36 +255,9 @@ ul img{
     font-size: 13px;
     font-weight: 600;
     padding: 10px;
+    margin-top: -2rem;
     display: flex;
     justify-content: center;
-}
-
-.conteudo-1{
-    padding-left: 15px;
-}
-
-.check-1 img{
-    width: 15px;
-    margin-right: 10px;
-}
-
-.agendar-corte{
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    font-family: Moul;
-    border: 1px solid #A10E0E;
-    background-color: #A10E0E;
-    border-radius: 15px;
-    padding: 7px 25px;
-    font-size: 15px;
-    margin-left: 70px;
-    margin-top: 65px;
-    transition: 0.3s;
-}
-
-.agendar-corte:hover{
-    transform: scale(1.08);
 }
 
 .rs-1{
@@ -323,6 +284,46 @@ ul img{
     gap: 20px;
 }
 
+.card-1 ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 10px;
+    margin-left: -1.5rem;
+}
+
+.card-1 li{
+    color: rgb(0, 0, 0);
+    width: 100%;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+
+.check-1 img{
+    width: 15px;
+    margin-right: 5px;
+}
+
+.agendar-corte{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: Poppins;
+    font-weight: 800;
+    border: 1px solid #A10E0E;
+    background-color: #A10E0E;
+    border-radius: 6px;
+    padding: 5px;
+    margin: 50px 75px;
+    transition: 0.3s;
+}
+
+.agendar-corte:hover{
+    transform: scale(1.08);
+}
+
 .card-2{
     color: rgb(0, 0, 0);
     background-color: #ffffff;
@@ -332,24 +333,6 @@ ul img{
     gap: 15px;
     overflow: hidden;
     padding: 15px 0px;
-}
-
-.card-2 ul{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    gap: 30px;
-    padding-left: 0;
-    margin-left: 0;
-}
-
-.card-2 li{
-    color: rgb(0, 0, 0);
-    text-align: left;
-    width: 100%;
-    border-bottom: 1px solid #333;
-    padding-bottom: 15px;
 }
 
 .card-topo2{
@@ -370,34 +353,7 @@ ul img{
     padding: 10px;
     display: flex;
     justify-content: center;
-}
-
-.conteudo-2{
-    padding-left: 15px;
-}
-
-.check-2 img{
-    width: 15px;
-    margin-right: 10px;
-}
-
-.agendar-barba{
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    font-family: Moul;
-    border: 1px solid #A10E0E;
-    background-color: #A10E0E;
-    border-radius: 15px;
-    padding: 7px 25px;
-    font-size: 15px;
-    margin-left: 70px;
-    margin-top: 35px;
-    transition: 0.3s;
-}
-
-.agendar-barba:hover{
-    transform: scale(1.08);
+    margin-top: -2rem;
 }
 
 .rs-2{
@@ -422,6 +378,46 @@ ul img{
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+
+.card-2 ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 10px;
+    margin-left: -1.5rem;
+}
+
+.card-2 li{
+    color: rgb(0, 0, 0);
+    width: 100%;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+
+.check-2 img{
+    width: 15px;
+    margin-right: 5px;
+}
+
+.agendar-barba{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: Poppins;
+    font-weight: 800;
+    border: 1px solid #A10E0E;
+    background-color: #A10E0E;
+    border-radius: 6px;
+    padding: 5px;
+    margin: 50px 75px;
+    transition: 0.3s;
+}
+
+.agendar-barba:hover{
+    transform: scale(1.08);
 }
 
 .card-3{
@@ -471,6 +467,7 @@ ul img{
     padding: 10px;
     display: flex;
     justify-content: center;
+    margin-top: -2rem;
 }
 
 .conteudo-3{
@@ -483,18 +480,19 @@ ul img{
 }
 
 .agendar-cortebarba{
-    display: inline-block;
+    display: block;
+    text-align: center;
     text-decoration: none;
     color: white;
-    font-family: Moul;
+    font-family: Poppins;
+    font-weight: 800;
     border: 1px solid #A10E0E;
     background-color: #A10E0E;
-    border-radius: 15px;
-    padding: 7px 25px;
-    font-size: 15px;
-    margin-left: 70px;
-    margin-top: 25px;
+    border-radius: 6px;
+    padding: 5px;
+    margin: 50px 75px;
     transition: 0.3s;
+    margin-top: 0;
 }
 
 .agendar-cortebarba:hover{
