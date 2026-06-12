@@ -158,18 +158,18 @@ nav ul{
     padding-left: 200px; 
 }
 
-.bloco-inf{
+.bloco-meio{
     display: flex;
     justify-content: space-evenly;
     overflow: hidden;
     margin-top: 95px;
 }
 
-.bloco-inf ul{
+.bloco-meio ul{
     list-style: none;
 }
 
-.bloco-inf li{
+.bloco-meio li{
     font-size: 22px;
     font-weight: 600;
     color: rgb(0, 0, 0);
