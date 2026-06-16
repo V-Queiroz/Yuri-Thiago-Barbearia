@@ -183,8 +183,58 @@ nav ul{
     height: auto;
 }
 
-.bloco-inf ul img{
+.bloco-meio ul img{
     color: #A10E0E;
+}
+
+#bem-vindo{
+    display: flex;
+    justify-content: center;
+    font-family: Moul;
+    color: #A10E0E;
+    padding-top: 8rem;
+}
+
+.lista-servicos-check{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+}
+
+.lista-servicos-check ul{
+    font-family: Poppins;
+    list-style: none;
+    color: black;
+}
+
+.lista-servicos-check li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 15px;
+}
+
+.bloco-inf{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 200px 0px;
+}
+
+.historia-barbearia{
+    display: flex;
+    flex-direction: column;
+}
+
+.historia-barbearia h3{
+    color: #A10E0E;
+    font-family: Poppins;
+    font-weight:bolder;
+}
+
+.bloco-inf p{
+    max-width: 700px;
+    font-size: 17px;
+    padding-bottom: 3rem;
 }
 
 .servicos{
