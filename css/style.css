@@ -31,6 +31,7 @@ header{
     width: 100%;
     position: sticky;
     top: 0;
+    z-index: 999;
 }
 
 nav{
@@ -214,10 +215,41 @@ nav ul{
     padding-bottom: 15px;
 }
 
+.animar-esquerda,
+.animar-direita {
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+.animar-esquerda {
+    transform: translateX(-80px);
+}
+
+.animar-direita {
+    transform: translateX(80px);
+}
+
+.animar-esquerda.ativo,
+.animar-direita.ativo {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 .bloco-inf{
     display: flex;
     justify-content: space-evenly;
     padding: 200px 0px;
+}
+
+.bloco-inf img{
+    transition: transform 2.8s cubic-bezier(0.22, 1, 0.36, 1);
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.bloco-inf img:hover{
+    transform: scale(1.04);
+    box-shadow: 0 60px 80px, rgba(0,0,0,.25);
 }
 
 .historia-barbearia{
