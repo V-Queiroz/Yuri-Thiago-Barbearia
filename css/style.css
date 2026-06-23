@@ -215,6 +215,17 @@ nav ul{
     padding-bottom: 15px;
 }
 
+.animar-baixo{
+    opacity: 0;
+    transition: all 0.8s ease;
+    transform: translateY(120px);
+}
+
+.animar-baixo.ativo{
+    opacity: 1;
+    transform: translateY(0);  
+}
+
 .animar-esquerda,
 .animar-direita {
     opacity: 0;
@@ -231,6 +242,16 @@ nav ul{
 
 .animar-esquerda.ativo,
 .animar-direita.ativo {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.animar-fade{
+    opacity: 0;
+    transition: all 2.0s ease;
+}
+
+.animar-fade.ativo{
     opacity: 1;
     transform: translateX(0);
 }
