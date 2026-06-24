@@ -264,13 +264,10 @@ nav ul{
 
 .bloco-inf img{
     transition: transform 2.8s cubic-bezier(0.22, 1, 0.36, 1);
-    overflow: hidden;
-    border-radius: 12px;
 }
 
 .bloco-inf img:hover{
     transform: scale(1.04);
-    box-shadow: 0 60px 80px, rgba(0,0,0,.25);
 }
 
 .historia-barbearia{
@@ -878,7 +875,7 @@ nav ul{
     font-size: 17px;
     border-bottom: 2px solid black;
     padding-bottom: 15px;
-    padding-right: 330px;
+    padding-right: 20.5rem;
 }
 
 #icon-wpp {
@@ -893,6 +890,7 @@ nav ul{
 .insta-contato p{
     font-size: 17px;
     border-bottom: 2px solid black;
+    padding-right: 15rem;
     padding-bottom: 15px;
 }
 
