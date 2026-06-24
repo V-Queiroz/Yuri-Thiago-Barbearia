@@ -27,7 +27,7 @@ body{
 }
 
 header{
-    background-color: black;
+    background-color: #000;
     width: 100%;
     position: sticky;
     top: 0;
@@ -90,8 +90,9 @@ nav ul{
     overflow: hidden;
     padding-left: 10%;
     padding: 190px 110px;
-    
 
+    /* Corrige hairline entre header e hero em certos níveis de zoom */
+    margin-top: -1px;
 }
 
 .hero-img img{
