@@ -84,6 +84,7 @@ nav ul{
 }
 
 .hero{
+    background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -132,11 +133,6 @@ nav ul{
 #btn-agendar:hover{
     color: #dfdddd;
     transform: scale(1.08);
-}
-
-.hero{
-    background-color: black;
-    
 }
 
 .sobre{
@@ -843,7 +839,7 @@ nav ul{
 
 .conteudo-page{
     display: flex;
-    justify-content: space-evenly;
+    
 }
 
 .conteudo-page iframe{
@@ -970,4 +966,114 @@ nav ul{
 .mapBox iframe{
     width: 100%;
     height: 100%;
+}
+
+@media screen and (max-width: 1392px){
+
+nav{
+    margin-left: 140px;
+}
+nav ul{
+    margin-left: 40px;
+}
+
+.logo-header{
+    margin-left: 0px;
+    width: 170px;
+    height: auto;
+}
+
+.hero{
+    padding: 213px 90px;
+    justify-content: flex-start;
+    
+}
+
+.hero-img img{
+    width: 700px;
+}
+
+
+.hero-text h1{
+    font-size: 40px;
+}
+
+.hero-text h2{
+    font-size: 20px;
+}
+
+.bloco-sup{
+    padding-left: 100px;
+}
+
+.sobre-img img{
+    width: 400px;
+}
+
+.bloco-inf img{
+    width: 450px;
+    height: auto;
+}
+
+.historia-barbearia h3{
+    margin-bottom: -5px;
+}
+
+.bloco-inf p{
+    max-width: 500px;
+    font-size: 17px;
+    padding-bottom: 1.5rem;
+}
+
+.servicos-text img{
+    width: 300px
+}
+
+.card-sup{
+    gap: 80px;
+}
+
+.titulo-contato{
+    font-size: 13px;
+}
+
+.frase-contato{
+    font-size: 14px;
+}
+
+.endereco-contato p{
+    font-size: 15px;
+}
+
+#icon-map{
+    width: 35px;
+}
+
+.tel-contato p{
+    font-size: 15px;
+    padding-right: 18.3rem;
+}
+
+#icon-wpp {
+    width: 30px;
+}
+
+.insta-contato p{
+    font-size: 15px;
+    padding-right: 13rem;
+}
+
+#icon-insta {
+    width: 35px;
+}
+
+.mapBox{
+    width: 550px;
+    height: 450px;
+}
+
+.conteudo-page iframe{
+    padding-top: 170px;
+}
+
 }
