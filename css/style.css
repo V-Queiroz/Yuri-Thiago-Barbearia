@@ -32,6 +32,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 999;
+    justify-content: center;
 }
 
 nav{
@@ -136,7 +137,7 @@ nav ul{
 }
 
 .sobre{
-    padding: 35px 35px;
+    padding: 75px 35px;
 }
 
 #title-sobre{
@@ -839,12 +840,13 @@ nav ul{
 
 .conteudo-page{
     display: flex;
+    justify-content: center;
+    gap: 80px;
     
 }
 
-.conteudo-page iframe{
-    display: flex;
-    padding-top: 200px;
+.conteudo-page iframe{  
+    padding-top: 170px;
 }
 
 .endereco-contato{
@@ -968,6 +970,17 @@ nav ul{
     height: 100%;
 }
 
+@media screen and (max-width: 1450px){
+
+    .logo-header{
+        margin-left: 0px;
+    }
+
+    .conteudo-page{
+        gap: 10px;
+    }
+}
+
 @media screen and (max-width: 1392px){
 
 nav{
@@ -1077,3 +1090,11 @@ nav ul{
 }
 
 }
+
+@media screen and (max-width: 1221px){
+
+    .hero-img{
+        width: 650px;
+    }
+    
+    }
